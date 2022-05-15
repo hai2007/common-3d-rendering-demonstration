@@ -82,10 +82,10 @@ __etcpack__scope_args__=window.__etcpack__getBundle('19');
 var appModule =__etcpack__scope_args__.default;
  // 引入样式
 
-__etcpack__scope_args__=window.__etcpack__getBundle('42');
+__etcpack__scope_args__=window.__etcpack__getBundle('43');
 var menu =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('43');
+__etcpack__scope_args__=window.__etcpack__getBundle('44');
 var style =__etcpack__scope_args__.default;
  // 先获取平台实例
 
@@ -2846,7 +2846,7 @@ var uiToggle =__etcpack__scope_args__.default;
 __etcpack__scope_args__=window.__etcpack__getBundle('38');
 var uiGotoExample =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('40');
+__etcpack__scope_args__=window.__etcpack__getBundle('41');
 var uiCode =__etcpack__scope_args__.default;
 
 
@@ -3176,7 +3176,7 @@ window.__etcpack__bundleSrc__['24']=function(){
 window.__etcpack__bundleSrc__['25']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        常见3D绘制演示\n    </h2>\n    <search></search>\n</header>\n<div class=\"content\">\n    <div class=\"menu-view\">\n        <div>\n            <h2>目录</h2>\n            <ul>\n                <li ui-bind:active='pageName==\"begin\"?\"yes\":\"no\"'>\n                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>\n                </li>\n            </ul>\n            <a href=\"https://github.com/hai2007/common-3d-rendering-demonstration\" target=\"_blank\">Fork Me On\n                Github</a>\n        </div>\n    </div>\n    <div class=\"content\">\n        <div ui-lazy='currentPage' id='root-view'></div>\n    </div>\n</div>\n"
+    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        常见3D绘制演示\n    </h2>\n    <search></search>\n</header>\n<div class=\"content\">\n    <div class=\"menu-view\">\n        <div>\n            <h2>目录</h2>\n            <ul>\n                <li ui-bind:active='pageName==\"begin\"?\"yes\":\"no\"'>\n                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='image3d' ui-on:click='doScroll'>绘图对象</h3>\n                            <ul>\n                                <li>\n                                    <h3 tag='shader' ui-on:click='doScroll'>着色器</h3>\n                                </li>\n                                <li>\n                                    <h3 tag='painter' ui-on:click='doScroll'>绘制画笔</h3>\n                                </li>\n                                <li>\n                                    <h3 tag='more' ui-on:click='doScroll'>更多</h3>\n                                </li>\n                            </ul>\n                        </li>\n                        <li>\n                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>\n                        </li>\n                    </ul>\n                </li>\n            </ul>\n            <a href=\"https://github.com/hai2007/common-3d-rendering-demonstration\" target=\"_blank\">Fork Me On\n                Github</a>\n        </div>\n    </div>\n    <div class=\"content\">\n        <div ui-lazy='currentPage' id='root-view'></div>\n    </div>\n</div>\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -3957,7 +3957,11 @@ __etcpack__scope_bundle__.default=_class;
 window.__etcpack__bundleSrc__['39']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= {};
+    __etcpack__scope_bundle__.default= {
+  "begin_painter": function begin_painter() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle2.js','40');
+  }
+};
   
     return __etcpack__scope_bundle__;
 }
@@ -3965,7 +3969,7 @@ window.__etcpack__bundleSrc__['39']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-code.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['40']=function(){
+window.__etcpack__bundleSrc__['41']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3979,7 +3983,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('34');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('41');
+__etcpack__scope_args__=window.__etcpack__getBundle('42');
 var OpenWebEditor =__etcpack__scope_args__.default;
 
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
@@ -4078,7 +4082,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/open-web-editor/dist/open-web-editor.min.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['41']=function(){
+window.__etcpack__bundleSrc__['42']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
@@ -4114,7 +4118,7 @@ window.__etcpack__bundleSrc__['41']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/menu.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['42']=function(){
+window.__etcpack__bundleSrc__['43']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "\n div.menu-view{\n\nwhite-space: nowrap;\n\nuser-select: none;\n\n}\n\n div.menu-view>div{\n\noverflow: auto;\n\ndisplay: inline-block;\n\nvertical-align: top;\n\nwhite-space: normal;\n\n}\n\n div.menu-view>div:first-child{\n\nwidth: 2.8rem;\n\npadding: .2rem;\n\n}\n\n div.menu-view>div:first-child li{\n\npadding-left: 1em;\n\n}\n\n div.menu-view>div:first-child li[active]{\n\nbackground-repeat: no-repeat;\n\nbackground-position: -4px 6px;\n\nbackground-size: 20px auto;\n\n}\n\n div.menu-view>div:first-child li[active=\"yes\"]{\n\nbackground-image: url('./image/open.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]{\n\nbackground-image: url('./image/close.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]>ul{\n\ndisplay: none;\n\n}\n\n div.menu-view>div:first-child h2{\n\npadding: 10px 0;\n\nfont-size: .16rem;\n\n}\n\n div.menu-view>div:first-child h3{\n\nfont-weight: 400;\n\nfont-size: .14rem;\n\ncolor: #304455;\n\ncursor: pointer;\n\ndisplay: inline-block;\n\nmargin: .07rem 0;\n\nheight: 1.2em;\n\n}\n\n div.menu-view>div:first-child h3:hover{\n\nborder-bottom: 2px solid #2396b9;\n\n}\n"
@@ -4125,10 +4129,10 @@ window.__etcpack__bundleSrc__['42']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/style.css
 /*****************************************************************/
-window.__etcpack__bundleSrc__['43']=function(){
+window.__etcpack__bundleSrc__['44']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "html {\n    font-size: 100px;\n    font-family: serif;\n}\n\nbody {\n    font-size: .16rem;\n}\n\n.warn {\n    color: rgb(199, 191, 191) !important;\n    font-size: 12px !important;\n    font-weight: 800 !important;\n}\n\n.doc-view>h4 {\n    color: #000000;\n    border-bottom: 1px solid gray;\n    padding: 2px 10px !important;\n    font-size: 13px !important;\n}\n"
+    __etcpack__scope_bundle__.default= "html {\n    font-size: 100px;\n    font-family: serif;\n}\n\nbody {\n    font-size: .16rem;\n}\n\n.warn {\n    color: rgb(40, 34, 34) !important;\n    font-size: 12px !important;\n    font-weight: 800 !important;\n    padding: 0 5px;\n}\n\n.doc-view>h4 {\n    color: #000000;\n    border-bottom: 1px solid gray;\n    padding: 2px 10px !important;\n    font-size: 13px !important;\n}\n"
   
     return __etcpack__scope_bundle__;
 }

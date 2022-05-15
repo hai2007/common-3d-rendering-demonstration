@@ -11,6 +11,25 @@
             <ul>
                 <li ui-bind:active='pageName=="begin"?"yes":"no"'>
                     <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>
+                    <ul>
+                        <li>
+                            <h3 tag='image3d' ui-on:click='doScroll'>绘图对象</h3>
+                            <ul>
+                                <li>
+                                    <h3 tag='shader' ui-on:click='doScroll'>着色器</h3>
+                                </li>
+                                <li>
+                                    <h3 tag='painter' ui-on:click='doScroll'>绘制画笔</h3>
+                                </li>
+                                <li>
+                                    <h3 tag='more' ui-on:click='doScroll'>更多</h3>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <a href="https://github.com/hai2007/common-3d-rendering-demonstration" target="_blank">Fork Me On
