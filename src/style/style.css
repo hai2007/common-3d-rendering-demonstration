@@ -1,0 +1,21 @@
+html {
+    font-size: 100px;
+    font-family: serif;
+}
+
+body {
+    font-size: .16rem;
+}
+
+.warn {
+    color: rgb(199, 191, 191) !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+}
+
+.doc-view>h4 {
+    color: #000000;
+    border-bottom: 1px solid gray;
+    padding: 2px 10px !important;
+    font-size: 13px !important;
+}

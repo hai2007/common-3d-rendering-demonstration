@@ -1,0 +1,23 @@
+<header>
+    <h2>
+        常见3D绘制演示
+    </h2>
+    <search></search>
+</header>
+<div class="content">
+    <div class="menu-view">
+        <div>
+            <h2>目录</h2>
+            <ul>
+                <li ui-bind:active='pageName=="begin"?"yes":"no"'>
+                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>
+                </li>
+            </ul>
+            <a href="https://github.com/hai2007/common-3d-rendering-demonstration" target="_blank">Fork Me On
+                Github</a>
+        </div>
+    </div>
+    <div class="content">
+        <div ui-lazy='currentPage' id='root-view'></div>
+    </div>
+</div>
